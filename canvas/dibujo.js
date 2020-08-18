@@ -1,6 +1,8 @@
 var texto = document.getElementById("texto_lineas");
 var boton = document.getElementById("btn");
+var reset = document.getElementById("btn-reset");
 boton.addEventListener("click", dibujoPorClick);
+reset.addEventListener("click", resetPage);
 /*addEventListener es una función que está escuchando cuando suceda un evento
  y ejecutar alguna indicación. 
  Esta función necesita 2 parametros, 
@@ -10,6 +12,10 @@ boton.addEventListener("click", dibujoPorClick);
 var d = document.getElementById("dibujito"); //Obteniendo la etiqueta <canvas> del HTML con base en su ID
 var lienzo = d.getContext("2d"); //getContext es una función del objeto Canvas que me permite obtener el área donde voy a dibujar, se dibuja en 2d.
 var ancho = d.width; //Se obtiene el ancho de la etiqueta <canvas> que se guardo en la variable "d".
+
+function resetPage() {
+  location.reload();
+}
 
 function dibujarLinea(color, xInicial, yInicial, xFinal, yFinal) {
   lienzo.beginPath();
@@ -25,7 +31,6 @@ function dibujoPorClick() {
   var l = 0;
   var x, y;
   var espacio = ancho / lineas;
-
 
   for (l = 0; l < lineas; l++) {
     y = espacio * l;
