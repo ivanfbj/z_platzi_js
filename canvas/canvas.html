@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dibujando con Canvas</title>
-    <style>
-      body {
-        background: #000000;
-        color: #ffffff;
-      }
-      canvas {
-        border: #ffffff solid;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Dibujando con Canvas</h1>
+    <p>
+      Cuantas lineas quieres?
+      <input id="texto_lineas" type="text" />
+      <input id="btn" type="button" value="Enviar" />
+    </p>
     <canvas id="dibujito" width="300" height="300"> </canvas>
     <p>Asi queda el canvas</p>
 
