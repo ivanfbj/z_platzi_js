@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dibujando con Canvas</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Dibujando con Canvas</h1>
-    <p>
-      Cuantas lineas quieres?
-      <input id="texto_lineas" type="text" />
-      <input id="btn" type="button" value="Enviar" />
-      <input id="btn-reset" type="button" value="Reiniciar" />
-    </p>
-    <canvas id="dibujito" width="300" height="300"> </canvas>
-    <p>Asi queda el canvas</p>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Platzi dibujando con flechas</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	
+<div>
+	
+	<input id="btn-reload" type="button" value="Actualizar">
 
-    <script src="dibujo.js"></script>
-  </body>
+</div>
+
+	<canvas id="area_de_dibujo" width="300" height="300"></canvas>
+	<p>Mueve las flechas del teclado para dibujar</p>
+	
+	<h1>Prueba</h1>
+
+
+	<script type="text/javascript" src="./dibujo.js" ></script>
+</body>
 </html>
