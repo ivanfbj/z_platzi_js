@@ -78,10 +78,10 @@ function dibujar() {
   if (vaca.cargaOk == true) {
     console.log(cantidadAnimales);
     for (let v = 0; v < cantidadAnimales; v++) {
-      let x = aleatorio(0, 5);
-      let y = aleatorio(0, 5);
-      x = x * 80;
-      y = y * 80;
+      let x = aleatorio(0, 7);
+      let y = aleatorio(0, 7);
+      x = x * 40;
+      y = y * 40;
 
       papel.drawImage(vaca.imagen, x, y);
     }
